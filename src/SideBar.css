@@ -1,0 +1,22 @@
+.link-sidebar {
+  margin-right: 16px;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-sidebar:hover {
+  color: rgb(194, 161, 161);
+}
+
+.block-col-top {
+  display: block;
+  margin-top: 16px;
+  margin-right: 16px;
+}
+
+.block-col-bottom {
+  display: block;
+  margin-top: 2px;
+}
