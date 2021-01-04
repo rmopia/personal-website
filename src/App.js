@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import AboutMe from "./AboutMe";
 import Home from "./Home";
 import SideBar from "./SideBar";
 
@@ -13,7 +14,8 @@ class App extends Component{
     return(
       <BrowserRouter>
       <SideBar/>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={Home} />
+        <Route exact path="/about" component={AboutMe} />
       </BrowserRouter>
     )
   }

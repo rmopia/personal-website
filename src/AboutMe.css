@@ -1,0 +1,64 @@
+.about-me-container {
+  text-align: center;
+  margin-top: 340px;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+.row-2 {
+  margin-top: 200px;
+}
+
+.portfolio-img {
+  width: 200px;
+  height: auto;
+}
+
+.portfolio-middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolio-cont:hover .portfolio-img {
+  opacity: 0.3;
+}
+
+.portfolio-cont:hover .portfolio-middle {
+  opacity: 1;
+}
+
+.portfolio-text {
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.my-phone-num:hover {
+  font-style: italic;
+  color: rgb(135, 170, 130);
+}
+
+.about-me-col {
+  text-align: right;
+}
+
+.about-me-col:hover {
+  font-style: italic;
+  color: rgb(135, 170, 130);
+}
+
+.my-email {
+  color: black !important;
+}
+
+.my-email:hover {
+  font-style: italic;
+  color: rgb(135, 170, 130) !important;
+  text-decoration: none;
+}

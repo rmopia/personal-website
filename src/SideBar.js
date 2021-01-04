@@ -5,14 +5,22 @@ import "./SideBar.css"
 
 const content = <div>
     <div className="block-col-top">
-        <Link className="link-sidebar">ARCHIVE</Link>
+        <Link className="link-sidebar" to="/">ARCHIVE</Link>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/robert-mopia/" className="link-sidebar">LINKEDIN</a>
     </div>
     <div className="block-col-bottom">
-        <Link className="link-sidebar">ABOUT ME</Link>
+        <Link className="link-sidebar" to="/about">ABOUT ME</Link>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/rmopia" className="link-sidebar">GITHUB</a>
     </div>
-    <div className="footer">Robert Mopia 2021</div>
+    <div>
+        <p className="my-name">ROBERT MOPIA</p>
+        <p className="my-role">JR FULLSTACK DEV</p>
+    </div>
+    <div className="footer-container">
+        <small className="name-footer">
+            copyright &copy; {new Date().getFullYear()}
+        </small>
+    </div>
 </div>
 
 class SideBar extends Component{

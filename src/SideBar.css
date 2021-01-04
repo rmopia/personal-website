@@ -7,7 +7,30 @@
 }
 
 .link-sidebar:hover {
-  color: rgb(194, 161, 161);
+  color: rgb(135, 170, 130);
+  text-decoration: none;
+}
+
+.my-name {
+  color: black;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+}
+
+.my-name:hover {
+  color: rgb(135, 170, 130);
+}
+
+.my-role {
+  color: black;
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+}
+
+.my-role:hover {
+  color: rgb(135, 170, 130);
 }
 
 .block-col-top {
@@ -19,4 +42,18 @@
 .block-col-bottom {
   display: block;
   margin-top: 2px;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 20px;
+}
+
+.name-footer {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(44, 44, 44);
+}
+
+.name-footer:hover {
+  color: rgb(135, 170, 130);
 }
