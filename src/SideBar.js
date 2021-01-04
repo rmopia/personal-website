@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Sidebar from "react-sidebar";
 import { Link } from "react-router-dom";
 import "./SideBar.css"
+import trainer from "./resources/trainer.gif"
+
+var GifPlayer = require('react-gif-player');
 
 const stuff = <div>
     <div className="block-col-top">
@@ -17,6 +20,9 @@ const stuff = <div>
         <p className="my-role">JR FULLSTACK DEV</p>
     </div>
     <div className="footer-container">
+        <a target="_blank" rel="noopener noreferrer" href="https://www.piskelapp.com/p/agxzfnBpc2tlbC1hcHByEwsSBlBpc2tlbBiAgODwy46uCgw/view">
+            <GifPlayer autoplay={true} gif={trainer} />
+        </a>
         <small className="name-footer">
             copyright &copy; {new Date().getFullYear()} robert mopia
         </small>
@@ -31,7 +37,6 @@ class SideBar extends Component{
      
       render() {
         return (
-            <div>
                 <Sidebar
                 shadow={false}
                 sidebar={stuff}
@@ -39,7 +44,6 @@ class SideBar extends Component{
                 pullRight={true}
             >
           </Sidebar>
-            </div>
         );
       }
 }

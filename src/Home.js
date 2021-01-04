@@ -18,6 +18,7 @@ class Home extends Component{
         super(props);
       }
     
+      // onMouseOver={(e) => console.log(e.clientY - e.target.offsetTop)}
       render(){
         const opts = {
             height: '240',
@@ -67,6 +68,7 @@ class Home extends Component{
                         <YouTube videoId="-ku17UvK0Pw" opts={opts} onReady={this._onReady} className="mathly-youtube"/>
                     </Col>
                 </Row>
+                <hr/>
             </Container>
           </div>
         )
