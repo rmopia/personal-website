@@ -3,7 +3,7 @@ import Sidebar from "react-sidebar";
 import { Link } from "react-router-dom";
 import "./SideBar.css"
 
-const content = <div>
+const stuff = <div>
     <div className="block-col-top">
         <Link className="link-sidebar" to="/">ARCHIVE</Link>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/robert-mopia/" className="link-sidebar">LINKEDIN</a>
@@ -18,7 +18,7 @@ const content = <div>
     </div>
     <div className="footer-container">
         <small className="name-footer">
-            copyright &copy; {new Date().getFullYear()}
+            copyright &copy; {new Date().getFullYear()} robert mopia
         </small>
     </div>
 </div>
@@ -26,21 +26,20 @@ const content = <div>
 class SideBar extends Component{
     constructor(props) {
         super(props);
-        this.state = {
-          sidebarOpen: false
-        };
      
       }
      
       render() {
         return (
-          <Sidebar
-            shadow={false}
-            sidebar={content}
-            docked={true}
-            pullRight={true}
-          >
+            <div>
+                <Sidebar
+                shadow={false}
+                sidebar={stuff}
+                docked={true}
+                pullRight={true}
+            >
           </Sidebar>
+            </div>
         );
       }
 }

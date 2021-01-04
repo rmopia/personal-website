@@ -1,4 +1,30 @@
-.calendar {
+.home-row-1 {
   text-align: center;
   margin: 16px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-container {
+  z-index: 10 !important;
+}
+
+.site-link {
+  color: rgb(135, 170, 130);
+}
+
+.site-link:hover {
+  color: rgb(135, 170, 130);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mathly-link {
+  color: rgb(135, 170, 130);
+}
+
+.mathly-link:hover {
+  color: rgb(135, 170, 130);
+  font-weight: 500;
+  text-decoration: none;
 }
