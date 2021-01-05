@@ -6,10 +6,11 @@ import Col from 'react-bootstrap/Col'
 import "./AboutMe.css"
 import hiking from "./resources/hiking.jpg";
 import Button from 'react-bootstrap/Button'
+import Image from 'react-bootstrap/Image'
 
-const TITLE = 'About Me'
-const text_one = 'Disciplined fullstack developer with a focus in back-end development such as node.js functionality and complex algorithms that correspond to React apps.'
-const text_two = "Recently graduated with a Bachelor's in Computer Science from San Diego State University as of May 2020." 
+const TITLE = 'Robert Mopia'
+const text_one = 'Disciplined fullstack developer with a focus in back-end development such as Node.js functionality and complex algorithms that correspond to React apps.'
+const text_two = "Recently graduated with a Bachelor's in Computer Science and a 3.6 GPA from San Diego State University as of May 2020." 
 const text_three = "Currently building and maintaining back-end functions, applying front-end design and utilizing AWS cloud services under Mathly Inc."
 
 export default class AboutMe extends Component{
@@ -31,15 +32,15 @@ export default class AboutMe extends Component{
             </Helmet>
             <Container className="about-me-container">
                 <Row className="row-1">
-                    <Col xs={6} md={6}>
+                    <Col xs={3} md={6}>
                         <div className="portfolio-cont">
-                            <img src={hiking} className="portfolio-img" alt="myself"></img>
+                            <Image src={hiking} className="portfolio-img" alt="myself"></Image>
                             <div className="portfolio-middle">
                                 <div className="portfolio-text">Potato Chip Rock, 7/20/2020</div>
                             </div>
                         </div>
                     </Col>
-                    <Col xs={6} md={6} className="about-me-col">
+                    <Col xs={3} md={6} className="about-me-col">
                         <div className="about-me-1">{text_one}</div>
                         <div className="about-me-1">{text_two}</div>
                         <div className="about-me-1">{text_three}</div>

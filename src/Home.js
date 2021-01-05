@@ -12,6 +12,10 @@ import "./Home.css"
 import { Row } from "react-bootstrap";
 
 const TITLE = 'Robert Mopia'
+const backendText = 
+"BACK-END: Blueprinted schemas, created and maintained SQL database for user data, "+ 
+"constructed C# Web Api under AWS Lambda that handles all requests between the React app to the RDS, "+ 
+"developed Node.js algorithms and functionalities to streamline the user experience."
 
 class Home extends Component{
     constructor(props){
@@ -47,21 +51,21 @@ class Home extends Component{
                 </Row>
                 <Row className="home-row-2">
                     <Col xs={6} md={10}>
-                        <div>PERSONAL WEBSITE</div>
+                        <div className="project-header">PERSONAL WEBSITE</div>
                         <Link to="/" style={{display:"block"}} className="site-link">ROBERTMOPIA.COM</Link>
-                        <small>DECEMBER 2020 - ONGOING</small>
+                        <small className="from-to">DECEMBER 2020 - ONGOING</small>
                         <p>REACT, NODE.JS</p>
                     </Col>
                 </Row>
                 <hr/>
                 <Row className="home-row-3">
                     <Col xs={6} md={7}>
-                        <div>MATHLY APPLICATION</div>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/robert-mopia/" style={{display:"block"}} className='mathly-link'>APP.MATHLY.IO</a>
-                        <small>MAY 2020 - ONGOING</small>
+                        <div className="project-header">MATHLY APPLICATION</div>
+                        <a target="_blank" rel="noopener noreferrer" href="https://app.mathly.io" style={{display:"block"}} className='mathly-link'>APP.MATHLY.IO</a>
+                        <small className="from-to">MAY 2020 - ONGOING</small>
                         <p>JR FULLSTACK DEVELOPER, SCRUM MASTER</p>
                         <p>AWS TECHNOLOGIES UTILIZED: AWS RDS, LAMBDA, API GATEWAY, COGNITO</p>
-                        <p>BACK-END: Blueprinted schemas and created SQL database for user data, Created C# Web Api that handles all user data between React app to RDS SQL DB, Node.js algorithms to determine </p>
+                        <p>{backendText}</p>
                         <p>FRONT-END: REACT, CSS, BOOTSTRAP, REACT-BOOTSTRAP</p>
                     </Col>
                     <Col xs={6} md={5}>

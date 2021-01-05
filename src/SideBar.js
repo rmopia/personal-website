@@ -8,11 +8,11 @@ var GifPlayer = require('react-gif-player');
 
 const stuff = <div>
     <div className="block-col-top">
-        <Link className="link-sidebar" to="/">ARCHIVE</Link>
+        <Link className="link-sidebar" to="/archive">ARCHIVE</Link>
         <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/robert-mopia/" className="link-sidebar">LINKEDIN</a>
     </div>
     <div className="block-col-bottom">
-        <Link className="link-sidebar" to="/about">ABOUT ME</Link>
+        <Link className="link-sidebar" to="/">ABOUT ME</Link>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/rmopia" className="link-sidebar">GITHUB</a>
     </div>
     <div>

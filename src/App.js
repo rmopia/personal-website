@@ -14,8 +14,8 @@ class App extends Component{
     return(
       <BrowserRouter>
       <SideBar/>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={AboutMe} />
+        <Route exact path="/" component={AboutMe} />
+        <Route exact path="/archive" component={Home} />
       </BrowserRouter>
     )
   }

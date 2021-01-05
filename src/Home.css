@@ -28,3 +28,20 @@
   font-weight: 500;
   text-decoration: none;
 }
+
+.from-to {
+  color: rgb(168, 168, 168);
+}
+
+.from-to:hover {
+  color: black;
+}
+
+.project-header {
+  font-weight: bold;
+}
+
+.project-header:hover {
+  font-style: italic;
+  color: rgb(135, 170, 130);
+}
